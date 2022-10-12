@@ -1,0 +1,12 @@
+<%- include('bases/header'); -%>
+    <form action="/extracted"  method="post" enctype="multipart/form-data">
+        <input type="file" multiple name="files" id="file">
+        <button type="submit">lancer l'extraction</button>
+    </form>
+    <p>
+        <% if (data) { %>
+            <%=data %>
+        <% } %>
+    </p>
+
+<%- include('bases/footer'); -%>

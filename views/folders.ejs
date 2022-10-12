@@ -1,0 +1,16 @@
+<%- include('bases/header'); -%>
+
+<form action="/create-folder" method="post">
+    <div>
+        <label for="foldername">Folder name</label>
+        <input id="foldername" type="text" name="foldername">
+    </div>
+    
+    <button type="submit">create new folder</button>
+</form>
+
+<% data.forEach(folder => { %>
+    <p><%= folder  %> </p>
+<% }) %>
+
+<%- include('bases/footer'); -%>
